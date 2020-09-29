@@ -1,0 +1,7 @@
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+<main role="main" class="container">
+  <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+  <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+  <%= @inner_content %>
+</main>
